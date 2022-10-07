@@ -23,7 +23,7 @@ function Header(Props){
       try {
         async function fatchData(){
     
-            const response =  await Axios.get("http://localhost:3001/search/"+char_);
+            const response =  await Axios.get("/search/"+char_);
             navigate("/search", {state: {data: response.data}});
     }
     fatchData();

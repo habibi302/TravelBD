@@ -59,7 +59,7 @@ export default function InsertPost() {
         somePlaces:somePlaces.current.value
       }
 
-      Axios.post("http://localhost:3001/insert",data).then((response)=>{
+      Axios.post("/insert",data).then((response)=>{
         navigate("/adminhome");
       })
       .catch(err=>console.log(err));

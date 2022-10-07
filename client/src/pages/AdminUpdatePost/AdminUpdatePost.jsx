@@ -60,7 +60,7 @@ export default function AdminUpdatePost(Props) {
         somePlaces:somePlaces.current.value
       }
 
-      Axios.post("http://localhost:3001/update",data).then((response)=>{
+      Axios.post("/update",data).then((response)=>{
         navigate("/adminhome");
       })
       .catch(err=>console.log(err));

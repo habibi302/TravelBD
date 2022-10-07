@@ -14,7 +14,7 @@ export default function Famous({title, content, imgurl}) {
   try {
     async function fatchData(){
 
-        const response =  await Axios.get("http://localhost:3001/famousplaces/"+name.famousplaces);
+        const response =  await Axios.get("/famousplaces/"+name.famousplaces);
         console.log(response.data);
      setData(response.data);
 }

@@ -20,7 +20,7 @@ export default function AdminDivision() {
  try {
    async function fatchData(){
 
-       const response =  await Axios.get("http://localhost:3001/allplacesinadivision/"+id.divisionname);
+       const response =  await Axios.get("/allplacesinadivision/"+id.divisionname);
        setLoading(true);
        setPosts(response.data);
        setLoading(false);

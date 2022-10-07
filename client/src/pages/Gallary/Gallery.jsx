@@ -21,7 +21,7 @@ export default function Gallery(){
     const [photos, setPhotos] = useState([]);
     useEffect(()=>{
   try {
-    Axios.get("http://localhost:3001/galleryphotos").then((response)=>{
+    Axios.get("/galleryphotos").then((response)=>{
       setPhotos(response.data);
       console.log(response.data);
     });

@@ -15,7 +15,7 @@ const AdminPost = ({ posts, loading, setLoading}) => {
     const postID = {
       _id: id
     }
-    Axios.post("http://localhost:3001/delete",postID).then((response)=>{
+    Axios.post("/delete",postID).then((response)=>{
         setLoading(true);
     })
   }
