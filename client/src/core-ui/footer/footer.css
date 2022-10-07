@@ -1,0 +1,26 @@
+.copyright-text-style{
+    position:relative;
+    bottom: 0;
+    display:inline-block;
+    width: 100%;
+    background-color: #212529;
+    color: #ffffff;
+    text-align: center;
+    font-size: medium;
+    padding-top: 2%;
+    height: fit-content;
+
+  }
+  
+  .copyright-text-style2{
+    position: relative;
+    bottom: 0;
+    display:inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #666666;
+    text-align: center;
+    font-size: medium;
+    padding-top: 2%;
+  }
+
